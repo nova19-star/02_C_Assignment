@@ -1,25 +1,15 @@
-// Write a C program to print even numbers 
+// Write a C program to print Multiplication table of 2 
 
 #include <stdio.h>
 
-int main() 
-{
-    int i, a, b;
+int main() {
+    int i;
 
-    printf("Enter the start of the range: ");
-    scanf("%d", &a);
+    printf("Table of 2:\n");
 
-    printf("Enter the end of the range: ");
-    scanf("%d", &b);
-
-    printf("Even numbers between %d and %d are:\n", a, b);
-
-    for (i = a; i <= b; i++) 
-    {
-        if (i % 2 == 0) {  
-            printf("%d\n", i);
-        }
+    for (i = 1; i <= 10; i++) {
+        printf("2 x %d = %d\n", i, 2 * i);
     }
 
-    return 0; 
+    return 0;
 }
